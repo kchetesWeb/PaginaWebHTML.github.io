@@ -1,0 +1,211 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+    <title>Tours de Lady Gaga</title>
+    <style>
+        body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-family: "Lucida Handwriting", sans-serif;
+    }
+    nav {
+        background-color: #6495ED;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    nav a:hover {
+        background-color: #666;
+        color: white;
+    }
+	.container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+	.tour-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .tour-info img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+	#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tours de Lady Gaga</h1>
+        <div id="mapa-sitio">
+            <a href="index.HTML">Inicio</a>
+            <a href="Menu.HTML">Artistas</a>
+            <a href="Historia.html">Historia</a>
+            <a href="Albumes.html">Álbumes</a>
+            <a href="Premios.html">Premios</a>
+            <a href="Canciones.html">Canciones</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Formulario.html">Formulario</a>
+        </div>
+        <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+    </header>
+	
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/TheFameBallTour.jpg" alt="The Fame Ball Tour">
+            <p>The Fame Ball Tour fue la primera gira Lady Gaga como artista principal, la cual promovió su primer álbum de estudio, The Fame (2008).</p>
+            <p>El recorrido inició el 12 de marzo de 2009 en San Diego y terminó el 29 de septiembre del mismo año en Washington D. C., ambas ciudades ubicadas en los Estados Unidos. Si bien la mayor parte de sus conciertos fueron realizados en Norteamérica y Europa, la gira también visitó los continentes de Asia y Oceanía.</p>
+            <p>Para más información, visita el <a href="https://ladygaga.fandom.com/wiki/The_Fame_Ball">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tour-info">
+            <img src="Img/TheMonsterBallTour.jpg" alt="The Monster Ball Tour" style="display: block; margin: 0 auto;">
+            <p>The Monster Ball Tour fue la segunda gira de Lady Gaga, la cual promovió su tercer extended play, The Fame Monster (2009), aunque gran parte de la lista de canciones estuvo conformada por canciones de The Fame. Más de la mitad de los conciertos fueron realizados en Norteamérica, aunque también hubo una cantidad significativa en Europa. Tras haberse dado los conciertos del 2009, la gira fue totalmente renovada.</p>
+            <p>Ambas versiones fueron aclamadas por los críticos, quienes alabaron tanto los trajes como las coreografías, la escenografía y el rendimiento general de la cantante.</p>
+            <p>Para más información, visita el <a href="https://ladygaga.fandom.com/wiki/The_Monster_Ball_Tour">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/TheBornThisWay.jpg" alt="The Born This Way Ball" style="display: block; margin: 0 auto;">
+            <p>The Born This Way Ball fue la tercera gira de Lady Gaga, la cual promovió su segundo álbum de estudio, Born This Way (2011). Inició el 27 de abril de 2012 en Seúl (Corea del Sur) y terminó el 11 de febrero de 2013 en Montreal (Canadá). Originalmente la gira finalizaría en Tulsa (Estados Unidos), pero tuvieron que cancelarse los espectáculos restantes debido a que la cantante sufrió una fractura en su cadera.</p>
+            <p>Diversos críticos alrededor del mundo alabaron el espectáculo por su excentricidad, su escenografía y demás.</p>
+            <p>Para más información, visita el <a href="https://gaga.fandom.com/es/wiki/Born_This_Way_Ball_Tour">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tour-info">
+            <img src="Img/ArtRAVETheArtpopBall.jpg" alt="ArtRAVE: The Artpop Ball" style="display: block; margin: 0 auto;">
+            <p>artRAVE: The ARTPOP Ball Tour fue la cuarta gira de Lady Gaga, la cual promovió su tercer álbum de estudio, ARTPOP (2013). Inició el 4 de mayo de 2014 en Fort Lauderdale (Estados Unidos) y terminó el 24 de noviembre del mismo año en París (Francia).</p>
+            <p>Diversos críticos dieron buenos comentarios acerca de la energía del espectáculo y la voz de la cantante, pero aseguraron que hubo cierto desgaste en las presentaciones desde The Monster Ball Tour.</p>
+            <p>Para más información, visita el <a href="https://gaga.fandom.com/es/wiki/ArtRAVE:_The_Artpop_Ball">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/CheektoCheekTour.jpg" alt="Cheek to Cheek Tour" style="display: block; margin: 0 auto;" width="400">
+            <p>Cheek to Cheek Tour fue la primera gira a dúo de los cantautores Tony Bennett y Lady Gaga, la cual promovió igualmente su primer álbum a dúo, Cheek to Cheek (2014). Inició el 30 de diciembre de 2014 en Las Vegas y culminó el 1 de agosto de 2015 en Washington D. C., ambas en Estados Unidos.</p>
+            <p>El espectáculo tuvo críticas favorables por parte de los especialistas, que alabaron la coordinación y los rendimientos vocales de Bennett y Gaga tanto individualmente como a dúo.</p>
+            <p>Para más información, visita el <a href="https://ladygaga.fandom.com/wiki/Cheek_to_Cheek_Tour">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/JoanneWorldTour.png" alt="Joanne World Tour" style="display: block; margin: 0 auto;" width="400">
+            <p>Joanne World Tour fue la quinta gira musical como solista y sexta en general de Lady Gaga, realizada para promover su álbum Joanne (2016). Inició el 1 de agosto de 2017 en Vancouver (Canadá) y concluyó forzosamente el 1 de febrero de 2018 en Birmingham (Reino Unido), luego de que la artista se viera envuelta en un dolor severo ocasionado por su fibromialgia.</p>
+            <p>El espectáculo fue aclamado por la crítica, quienes describieron la producción en general como «increíble», «delirante», «impactante» e «impecable».</p>
+            <p>Para más información, visita el <a href="https://ladygaga.fandom.com/wiki/Joanne_World_Tour">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/Enigma.jpg" alt="Lady Gaga: Enigma" style="display: block; margin: 0 auto;" width="400">
+            <p>Lady Gaga: Enigma fue la segunda residencia de conciertos de Lady Gaga, llevada a cabo en el MGM Park Theater de Las Vegas (Estados Unidos). Inició el 28 de diciembre de 2018 y concluyó el 1 de febrero de 2020 luego de que sus espectáculos restantes fueran cancelados por el cierre del recinto a causa de la pandemia de COVID-19.</p>
+            <p>El espectáculo recibió la aclamación crítica en sus dos modalidades, con los expertos alabando la voz de Gaga, su energía en el escenario y su versatilidad. Varios también coincidieron en que es uno de los mejores espectáculos ofrecidos en Las Vegas.</p>
+            <p>Para más información, visita el <a href="https://ladygaga.fandom.com/wiki/Enigma_%2B_Jazz_%26_Piano">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/TheChromaticaBall.jpg" alt="The Chromatica Ball" style="display: block; margin: 0 auto;" width="600">
+            <p>The Chromatica Ball fue la sexta gira musical como solista y séptima en general de la cantautora estadounidense Lady Gaga, realizada para promover su sexto álbum de estudio, Chromatica (2020). Inició el 17 de julio de 2022 en Düsseldorf (Alemania) y culminó el 17 de septiembre del mismo año en Miami (Estados Unidos). Inicialmente la gira preveía iniciar en julio de 2020, pero debió ser pospuesta dos veces a causa de la pandemia de COVID-19.</p>
+            <p>El espectáculo recibió la aclamación por parte de la crítica, quienes elogiaron la puesta en escena, la cohesión del espectáculo y el rendimiento de Gaga en general, con varios expertos destacándola como la mejor gira de la artista.</p>
+            <p>Para más información, visita el <a href="https://ladygaga.fandom.com/wiki/The_Chromatica_Ball">artículo en Gagapedia</a>.</p>
+        </div>
+    </div>
+	
+<nav>
+    <div class="nav-wrapper" style="display: flex; justify-content: space-between;">
+        <a href="Menu.HTML">Menu</a>
+        <div class="nav-wrapper-center" style="display: flex; justify-content: center;">
+            <a href="ToursTaylorSwift.HTML">Tours de Taylor Swift</a>
+            <a href="ToursDuaLipa.HTML">Tours de Dua Lipa</a>
+        </div>
+        <div class="nav-wrapper-right" style="display: flex; justify-content: right;">
+            <a href="Formulario.HTML">Formulario</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+<title>Formulario sobre tus artistas musicales</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        color: #000000;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+    form {
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para ver las imágenes de fondo */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 50px; /* Espacio para el mapa del sitio */
+        position: relative; /* Asegura que las imágenes de fondo estén detrás */
+        z-index: 1; /* Coloca el formulario por encima de las imágenes de fondo */
+    }
+    h1 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input, textarea, select {
+        font-family: Helvetica, sans-serif;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+    input[type="submit"]:hover {
+        background-color: #357ca5;
+    }
+    #mapa-sitio {
+        position: absolute;
+        top: 50px; /* Ajuste para colocarlo cerca pero no encima del formulario */
+        left: 0;
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        display: none;
+        z-index: 2; /* Asegura que el mapa del sitio esté por encima del formulario */
+    }
+    #mapa-sitio a {
+        color: black;
+        font-family: "Britannic Bold", sans-serif;
+        display: block;
+        padding: 5px;
+        margin: 5px auto;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff;
+        color: #ffffff;
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3; /* Asegura que el botón esté por encima del mapa del sitio */
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+    #mapa-sitio a:visited {
+        color: #007bff;
+    }
+    .image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        z-index: 0; /* Coloca las imágenes de fondo detrás de todo */
+    }
+    .background-images {
+        flex: 1;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div id="mapa-sitio">
+        <a href="index.HTML">Inicio</a>
+        <a href="Menu.HTML">Artistas</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Albumes.html">Álbumes</a>
+        <a href="Premios.html">Premios</a>
+        <a href="Canciones.html">Canciones</a>
+        <a href="Tours.html">Tours</a>
+        <a href="Formulario.html">Formulario</a>
+    </div>
+    <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+</header>
+
+<div class="image-container">
+    <div class="background-images" style="background-image: url('Img/PosterMusica.jpeg');"></div>
+    <div class="background-images" style="background-image: url('Img/PosterMusica2.jpeg');"></div>
+    <div class="background-images" style="background-image: url('Img/PosterMusica3.jpeg');"></div>
+    <div class="background-images" style="background-image: url('Img/PosterMusica4.jpeg');"></div>
+</div>
+
+<form id="formulario">
+    <h1>Formulario sobre tus Artistas Musicales favoritos</h1>
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+    
+    <label for="nombreArtista">Nombre del artista:</label>
+    <input type="text" id="nombreArtista" name="nombreArtista" required>
+
+    <label for="genero">Género favorito:</label>
+    <select id="generoMusical" name="genero">
+        <option value="pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="hip-hop">Hip Hop</option>
+        <option value="electro">Electro</option>
+        <option value="jazz">Jazz</option>
+        <option value="latino">Latino</option>
+        <option value="k-pop">K-pop</option>
+        <option value="pop latino">Pop latino</option>
+        <option value="heavy metal">Heavy Metal</option>
+        <option value="rock alternativo">Rock alternativo</option>
+        <option value="indie pop">Indie pop</option>
+        <option value="indie rock">Indie rock</option>
+        <option value="corridos tumbados">Corridos tumbados</option>
+        <option value="otro">Otro</option>
+    </select>
+
+    <label for="comentario">Cuéntame sobre él/ella:</label>
+    <textarea id="comentario" name="comentario" rows="4"></textarea>
+    
+    <button type="submit">Guardar</button>
+</form>
+
+<script>
+document.getElementById("formulario").addEventListener("submit", function(event) { <!-- Obtiene el elemento del formulario con el ID "formulario" y añade un evento de escucha para el evento "submit". Cuando se envía el formulario, se ejecuta la función proporcionada -->
+    event.preventDefault(); <!-- Esto evita que el formulario se envíe de forma predeterminada, lo cual es útil para validar los datos antes de enviar el formulario -->
+    var nombre = document.getElementById("nombre").value; <!-- Obtiene el valor del campo de entrada de texto con el ID "nombre" y lo guarda en la variable nombre -->
+    var correo = document.getElementById("correo").value; <!-- Obtiene el valor del campo de entrada de texto con el ID "correo" y lo guarda en la variable correo -->
+    var nombreArtista = document.getElementById("nombreArtista").value; <!-- Obtiene el valor del campo de entrada de texto con el ID "nombreArtista" y lo guarda en la variable nombreArtista -->
+    var genero = document.getElementById("generoMusical").value; <!-- Obtiene el valor del campo de selección con el ID "genero" y lo guarda en la variable genero -->
+    var comentario = document.getElementById("comentario").value; <!-- Obtiene el valor del campo de entrada de texto con el ID "comentario" y lo guarda en la variable comentario -->
+    console.log("Nombre: " + nombre); <!-- Imprime en la consola del navegador el valor de la variable nombre -->
+    console.log("Correo: " + correo); <!-- Imprime en la consola del navegador el valor de la variable correo -->
+    console.log("Nombre del Artista: " + nombreArtista); <!-- Imprime en la consola del navegador el valor de la variable nombreArtista -->
+    console.log("GéneroMusical: " + generoMusical);  <!-- Imprime en la consola del navegador el valor de la variable generoMusical -->
+    console.log("Comentario: " + comentario); <!-- Imprime en la consola del navegador el valor de la variable comentario -->
+    alert("Datos guardados exitosamente"); <!-- Muestra una alerta en el navegador indicando que los datos del formulario se han guardado exitosamente -->
+});
+</script>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+
+<footer>
+</footer>
+
+</body>
+</html>

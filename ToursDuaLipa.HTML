@@ -1,0 +1,192 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+    <title>Tours de Dua Lipa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-family: "Lucida Handwriting", sans-serif;
+        }
+
+        .tour-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .tour-info img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+}
+		nav {
+    background-color: #6495ED;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: normal; /* Añadido para asegurar que no estén en negritas */
+}
+
+nav a:hover {
+    background-color: #666;
+    color: white;
+}
+#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tours de Dua Lipa</h1>
+		<div id="mapa-sitio">
+        <a href="index.HTML">Inicio</a>
+        <a href="Menu.HTML">Artistas</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Albumes.html">Álbumes</a>
+        <a href="Premios.html">Premios</a>
+        <a href="Canciones.html">Canciones</a>
+        <a href="Tours.html">Tours</a>
+        <a href="Formulario.html">Formulario</a>
+    </div>
+    <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+    </header>
+
+    <div class="container">
+        <div class="tour-info">
+            <img src="Img/DuaLipaHotterthanHell.png" alt="Hotter than Hell Tour" width="320">
+            <p>Hotter Than Hell Tour es la primera gira oficial de conciertos de la cantante británica-albanesa Dua Lipa como anfitriona, en apoyo de su álbum debut de estudio, de título homónimo Dua Lipa.</p>
+            <p> El nombre de la gira hace referencia su sencillo «Hotter than Hell». Cabe destacar que la gira se llevó a cabo antes del lanzamiento del álbum en 2017.</p>
+            <p>Para más información, visita el <a href="https://dualipa.fandom.com/wiki/Hotter_Than_Hell_Tour">artículo en DuaLipaWiki</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/US and Europe Tour (Dua Lipa).jpg" alt="US and Europe Tour (Dua Lipa)" width="320">
+            <p>US and Europe Tour fue la segunda gira oficial de conciertos del cantante británica-albanesa Dua Lipa. La gira apoya su álbum de debut de estudio Dua Lipa.</p>
+            <p> Cabe destacar que esta gira fue realizada antes del lanzamiento del disco en 2017.</p>
+            <p>Para más información, visita el <a href="https://dualipa.fandom.com/wiki/US_and_Europe_Tour">artículo en DuaLipaWiki</a>.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tour-info">
+            <img src="Img/The Self-Titled Tour (Dua Lipa).jpg" alt="The Self-Titled Tour (Dua Lipa)" width="450">
+            <p>The Self-Titled Tour (En español, El Tour Autotitulado, haciendo un guiño al álbum homonónimo Dua Lipa) es la tercera gira oficial de conciertos de la cantante británica-albanesa Dua Lipa.</p>
+            <p> La gira apoya su álbum de debut de estudio Dua Lipa. La gira comenzó el 5 de octubre de 2017, en Brighton, Inglaterra, y concluyó el 24 de abril de 2018, en Estocolmo, Suecia.</p>
+            <p>Para más información, visita el <a href="https://dualipa.fandom.com/wiki/The_Self-Titled_Tour">artículo en DuaLipaWiki</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/FutureNostalgiaTour.jpg" alt="Future Nostalgia Tour" width="320">
+            <p>Future Nostalgia Tour fue la cuarta gira mundial de conciertos de la cantante británica-albanesa Dua Lipa. La gira apoya a su segundo álbum de estudio, Future Nostalgia. Ésta estaba programada para iniciar originalmente el 26 de abril del 2020 en Madrid, pero debió suspenderse a causa de la pandemia de COVID-19.</p>
+            <p>  La gira comenzó el 9 de febrero del 2022 en Miami y terminó el 28 de noviembre del mismo año en Tirana.</p>
+            <p>Para más información, visita el <a href="https://dualipa.fandom.com/wiki/Future_Nostalgia_Tour">artículo en DuaLipaWiki</a>.</p>
+        </div>
+    </div>
+	
+<nav>
+    <div class="nav-wrapper" style="display: flex; justify-content: space-between;">
+        <a href="Menu.HTML">Menu</a>
+		<div class="nav-wrapper-center" style="display: flex; justify-content: center;">
+            <a href="ToursLadyGaga.HTML">Tours de Lady Gaga</a>
+            <a href="ToursTaylorSwift.HTML">Tours de Taylor Swift</a>
+        </div>
+        <div class="nav-wrapper-right" style="display: flex; justify-content: right;">
+            <a href="Formulario.HTML">Formulario</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+	
+</body>
+</html>

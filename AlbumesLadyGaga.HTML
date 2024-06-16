@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+<title>Álbumes de Lady Gaga</title>
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-family: "Lucida Handwriting", sans-serif;
+    }
+    nav {
+        background-color: #6495ED;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    nav a:hover {
+        background-color: #666;
+        color: white;
+    }
+    .album-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .album {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+    .album img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Cambiar cursor a pointer */
+}
+    #mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Álbumes de Lady Gaga</h1>
+        <div id="mapa-sitio">
+            <a href="index.HTML">Inicio</a>
+            <a href="Menu.HTML">Artistas</a>
+            <a href="Historia.html">Historia</a>
+            <a href="Albumes.html">Álbumes</a>
+            <a href="Premios.html">Premios</a>
+            <a href="Canciones.html">Canciones</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Formulario.html">Formulario</a>
+        </div>
+        <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+    </header>
+
+<div class="album-grid">
+    <div class="album">
+        <img src="Img/Thefame.jpeg" alt="The Fame" onclick="window.open('https://ladygaga.fandom.com/wiki/The_Fame_(album)?so=search');">
+        <h2>The Fame</h2>
+        <p>Es el álbum debut de Lady Gaga. Fue lanzado por primera vez en Canadá el 19 de agosto de 2008 por Interscope Records.</p>
+    </div>
+    <div class="album">
+        <img src="Img/Thefamemonster.jpg" alt="The Fame Monster" onclick="window.open('https://ladygaga.fandom.com/wiki/The_Fame_Monster_(album)?so=search');">
+        <h2>The Fame Monster</h2>
+        <p>Es el primer EP de Lady Gaga, publicado el 18 de noviembre de 2009.</p>
+    </div>
+    <div class="album">
+        <img src="Img/Bornthisway.jpeg" alt="Born This Way" onclick="window.open('https://ladygaga.fandom.com/wiki/Born_This_Way_(album)?so=search');">
+        <h2>Born This Way</h2>
+        <p>Es el segundo álbum de estudio de Lady Gaga, lanzado en 2011.</p>
+    </div>
+    <div class="album">
+        <img src="Img/Artpop.jpeg" alt="Artpop" onclick="window.open('https://ladygaga.fandom.com/wiki/Artpop_(album)?so=search');">
+        <h2>Artpop</h2>
+        <p>Es el tercer álbum de estudio de Lady Gaga, lanzado en 2013.</p>
+    </div>
+    <div class="album">
+        <img src="Img/Cheek to cheek.jpg" alt="Cheek to Cheek" onclick="window.open('https://ladygaga.fandom.com/wiki/Cheek_to_Cheek_(album)?so=search');">
+        <h2>Cheek to Cheek</h2>
+        <p>Es el álbum de estudio a dueto entre Tony Bennett y Lady Gaga, lanzado en 2014.</p>
+    </div>
+    <div class="album">
+        <img src="Img/Joanne.jpeg" alt="Joanne" onclick="window.open('https://ladygaga.fandom.com/wiki/Joanne_(album)?so=search');">
+        <h2>Joanne</h2>
+        <p>Es el quinto álbum de estudio de Lady Gaga, lanzado en 2016.</p>
+    </div>
+	<div class="album">
+        <img src="Img/Astarisborn.jpeg" alt="A Star is Born" onclick="window.open('https://ladygaga.fandom.com/wiki/A_Star_Is_Born_(album)?so=search');">
+        <h2>A Star is Born</h2>
+        <p>Es la banda sonora de la película homónima de 2018, interpretada por sus protagonistas, Lady Gaga y Bradley Cooper. Fue lanzada simultáneamente con la película el 5 de octubre de 2018 bajo la distribución de Interscope Records.</p>
+    </div>
+    <div class="album">
+        <img src="Img/Chromatica.jpeg" alt="Chromatica" onclick="window.open('https://ladygaga.fandom.com/wiki/Chromatica_(album)?so=search');">
+        <h2>Chromatica</h2>
+        <p>Es el sexto álbum de estudio de Lady Gaga, lanzado en 2020.</p>
+    </div>
+    <div class="album">
+        <img src="Img/LoveForSale.jpg" alt="Love for Sale" onclick="window.open('https://ladygaga.fandom.com/wiki/Love_for_Sale_(album)?so=search');">
+        <h2>Love for Sale</h2>
+        <p>Es el segundo álbum de estudio a dueto entre Tony Bennett y Lady Gaga, lanzado en 2021.</p>
+    </div>
+</div>
+
+<nav>
+    <div class="nav-wrapper" style="display: flex; justify-content: space-between;">
+        <a href="Menu.HTML">Menu</a>
+        <div class="nav-wrapper-center" style="display: flex; justify-content: center;">
+            <a href="AlbumesTaylorSwift.HTML">Álbumes de Taylor Swift</a>
+            <a href="AlbumesDuaLipa.HTML">Álbumes de Dua Lipa</a>
+        </div>
+        <div class="nav-wrapper-right" style="display: flex; justify-content: right;">
+            <a href="Premios.HTML">Premios</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+
+</body>
+</html>

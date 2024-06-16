@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+<title>Premios</title>
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-family: "Lucida Handwriting", sans-serif;
+    }
+    nav {
+        background-color: #6495ED;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    nav a:hover {
+        background-color: #666;
+        color: white;
+    }
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Centra verticalmente */
+    }
+    .nav-wrapper-left {
+        display: flex;
+        justify-content: flex-start; /* Centra horizontalmente a la izquierda */
+        flex: 1; /* Ocupa todo el espacio disponible */
+    }
+    .nav-wrapper-center {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        flex: 1; /* Ocupa todo el espacio disponible */
+    }
+    .nav-wrapper-right {
+        display: flex;
+        justify-content: flex-end; /* Centra horizontalmente a la derecha */
+        flex: 1; /* Ocupa todo el espacio disponible */
+    }
+	p {
+            text-align: center;
+            color: #000000; /* Cambiar el color del texto a negro */
+            font-size: 1.2em; /* Aumentar el tamaño de la letra */
+        }
+	#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Premios</h1>
+	<div id="mapa-sitio">
+        <a href="index.HTML">Inicio</a>
+        <a href="Menu.HTML">Artistas</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Albumes.html">Álbumes</a>
+        <a href="Premios.html">Premios</a>
+        <a href="Canciones.html">Canciones</a>
+        <a href="Tours.html">Tours</a>
+        <a href="Formulario.html">Formulario</a>
+    </div>
+    <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+</header>
+
+<section id="inicio" style="text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <div style="margin-bottom: 20px;">
+            <img src="Img/Grammy.jpg" alt="Descripción de la imagen" style="max-width: 150px; margin-right: 20px; margin-top: 20px;">
+            <p style="font-family: 'Helvetica', cursive; text-align: left;">
+                Los Premios Grammy son los más importantes en lo referente a música de los que se entregan en Estados Unidos, y quizá en el mundo.
+                <a href="https://www.grammy.com" target="_blank">https://www.grammy.com</a>
+            </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <img src="Img/PremiosOdeon.jpg" alt="Descripción de la imagen" style="max-width: 150px; margin-right: 20px;">
+            <p style="font-family: 'Helvetica', cursive; text-align: left;">
+                Galardones de la música en España promovidos desde Agedi (la entidad que gestiona los derechos de propiedad intelectual de los productores discográficos).
+                <a href="https://www.premiosodeon.com" target="_blank">https://www.premiosodeon.com</a>
+            </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <img src="Img/BritAwards.jpg" alt="Descripción de la imagen" style="max-width: 150px; margin-right: 20px;">
+            <p style="font-family: 'Helvetica', cursive; text-align: left;">
+                Los Brit Awards o Brits son los premios anuales a la Industria Fonográfica Británica de la música pop. Quizá los más importantes que se conceden en Europa.
+                <a href="https://www.brits.co.uk" target="_blank">https://www.brits.co.uk</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<nav>
+    <div class="nav-wrapper">
+        <div class="nav-wrapper-left">
+            <a href="Menu.HTML">Menu</a>
+        </div>
+        <div class="nav-wrapper-center">
+            <a href="ArtistasPremios.HTML">Mis Artistas con premios</a>
+        </div>
+        <div class="nav-wrapper-right">
+            <a href="Canciones.HTML">Canciones</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+
+</body>
+</html>

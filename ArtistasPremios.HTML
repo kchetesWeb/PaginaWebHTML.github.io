@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+    <title>Artistas con premios</title>
+    <style>
+        body {
+            font-family: "Britannic Bold", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: black;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-family: "Lucida Handwriting", sans-serif;
+        }
+        nav {
+            background-color: #6495ED;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+        .nav-wrapper {
+            text-align: left;
+            margin-left: 10px;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #666;
+            color: white;
+        }
+        .nav-wrapper-right {
+            float: right;
+            margin-right: 10px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto; /* Centrar horizontalmente */
+            max-width: 800px; /* Ancho máximo para el contenido */
+        }
+        section h2 {
+            font-family: "Lucida Handwriting", cursive;
+        }
+        section p {
+            font-family: "Britannic Bold", cursive;
+		    color: #000000;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .left-image {
+            float: left;
+            margin-right: 10px; /* Espacio entre las imágenes */
+        }
+        .right-image {
+            float: right;
+            margin-left: 10px; /* Espacio entre las imágenes */
+        }
+        .artist-info {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .artist-info-item {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .artist-info-item img {
+            max-width: 300px;
+            margin-right: 20px;
+            float: left;
+        }
+        .artist-info-item p {
+            font-family: 'Helvetica', cursive;
+            text-align: left;
+        }
+		p {
+            text-align: center;
+            color: #000000; /* Cambiar el color del texto a negro */
+            font-size: 1.2em; /* Aumentar el tamaño de la letra */
+        }
+		#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Mis Artistas con premios</h1>
+	<div id="mapa-sitio">
+        <a href="index.HTML">Inicio</a>
+        <a href="Menu.HTML">Artistas</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Albumes.html">Álbumes</a>
+        <a href="Premios.html">Premios</a>
+        <a href="Canciones.html">Canciones</a>
+        <a href="Tours.html">Tours</a>
+        <a href="Formulario.html">Formulario</a>
+    </div>
+    <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+</header>
+
+<section id="inicio" class="artist-info">
+    <div class="artist-info-item">
+        <img src="Img/LadyGagaPremios2.png" alt="Descripción de la imagen">
+        <p>
+            <br>Fue nominada a 5 premios, pero solo pudo conseguir dos: ‘Mejor álbum de dance/electrónica’ por ‘The Fame’ y ‘Mejor grabación dance’ por ‘Poker Face’. La cantante fue premiada en 2015 por ‘Cheek to cheek’; luego en 2019 por ‘Shallow’, su colaboración con Bradley Cooper; en 2020 por ‘I’ll never love again’; en 2021 por ‘Rain on me’ y en 2022 por ‘Love for sale’. <b><u><i>Actualmente tiene 13 grammys.</i></u></b>
+            <a href="https://www.grammy.com" target="_blank">https://www.grammy.com</a>
+        </p>
+    </div>
+    <div class="artist-info-item">
+        <img src="Img/TaylorSwiftPremios2.png" alt="Descripción de la imagen">
+        <p>
+            <br>2010: Álbum del Año, Fearless, 2010: Mejor Álbum Country, Fearless, 2012: Mejor Interpretación de Country Solista, Mean, 2012: Mejor Canción Country, Mean, 2016: Álbum del Año, 1989, 2016: Mejor Álbum Vocal de Pop, 1989, 2016: Mejor Videoclip, Bad Blood (con Kendrick Lamar), 2021: Álbum del Año, Folklore, 2023: Mejor Videoclip, All Too Well: The Short Film, 2024: Mejor Álbum de Vocal Pop, Midnights, 2024: Álbum del Año, Midnights. <b><u><i>Actualmente tiene 14 grammys.</i></u></b>
+            <a href="https://www.grammy.com" target="_blank">https://www.grammy.com</a>
+        </p>
+    </div>
+    <div class="artist-info-item">
+        <img src="Img/DuaLipaPremios2.png" alt="Descripción de la imagen" height="300">
+        <p>
+            <br><b><u><i>Dua Lipa ha logrado llevarse a casa tres grammys.</i></u></b> Lo hizo en 2019 en las categorías Mejor Grabación Dance (“Electricity”) y Mejor Artista Nuevo. Posteriormente, ganó su tercer gramófono en el 2021, tras salir victoriosa en la categoría Mejor álbum vocal de pop gracias a su disco Future Noltalgia.
+            <a href="https://www.grammy.com" target="_blank">https://www.grammy.com</a>
+        </p>
+    </div>
+</section>
+
+<nav>
+    <div class="nav-wrapper" style="display: flex; justify-content: space-between;">
+        <a href="Menu.HTML">Menu</a>
+        <div class="nav-wrapper-right" style="display: flex; justify-content: right;">
+            <a href="Canciones.HTML">Canciones</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+
+</body>
+</html>

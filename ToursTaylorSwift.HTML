@@ -1,0 +1,208 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+    <title>Tours de Taylor Swift</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-family: "Lucida Handwriting", sans-serif;
+        }
+
+        .tour-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .tour-info img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+}
+		nav {
+    background-color: #6495ED;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: normal; /* Añadido para asegurar que no estén en negritas */
+}
+
+nav a:hover {
+    background-color: #666;
+    color: white;
+}
+	#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tours de Taylor Swift</h1>
+		<div id="mapa-sitio">
+        <a href="index.HTML">Inicio</a>
+        <a href="Menu.HTML">Artistas</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Albumes.html">Álbumes</a>
+        <a href="Premios.html">Premios</a>
+        <a href="Canciones.html">Canciones</a>
+        <a href="Tours.html">Tours</a>
+        <a href="Formulario.html">Formulario</a>
+    </div>
+    <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+    </header>
+
+    <div class="container">
+        <div class="tour-info">
+            <img src="Img/FearlessTour.jpg" alt="Fearless Tour" width="320">
+            <p>The Fearless Tour fue la primera gira de la cantante de música country Taylor Swift para promocionar su segundo álbum de estudio Fearless. El tour incluyó actos de apertura por parte de artistas como Kellie Pickler y Gloriana.</p>
+            <p> Durante la gira, Taylor actuó con invitados especiales como John Mayer, Faith Hill y Katy Perry. El setlist estaba compuesto por 19 canciones en total.</p>
+            <p>Para más información, visita el <a href="https://taylorswift.fandom.com/wiki/Fearless_Tour">artículo en Swiftipedia</a>.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tour-info">
+            <img src="Img/SpeakNowWorldTour.jpg" alt="Speak Now World Tour" width="320">
+            <p>Speak Now World Tour fue la segunda gira de la cantante y compositora estadounidense Taylor Swift en apoyo de su tercer álbum de estudio, Speak Now. El tour visitó Asia, Europa, América del Norte y Oceanía, ocupando el décimo lugar en la lista de Pollstar's "Top 50 Worldwide Tour (Mid-Year)", recaudando más de $40 millones.</p>
+            <p> Al término de 2011, la gira quedó en quinto lugar en la lista de "Billboard's Annual Top 25 Tours", con una recaudación de $123 millones con 89 espectáculos.</p>
+            <p>Para más información, visita el <a href="https://taylorswift.fandom.com/es/wiki/Speak_Now_World_Tour">artículo en Swiftipedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/TheRedTour.jpg" alt="The Red Tour">
+            <p>The Red Tour fue la tercera gira de la cantante y compositora estadounidense Taylor Swift para promover su cuarto álbum de estudio Red. Comenzó el 13 de marzo de 2013 en Estados Unidos y culminó el 12 de junio de 2014 en Singapur.</p>
+            <p> Contó con ochenta y seis presentaciones en doce países distintos, y tuvo como invitado especial al cantante británico Ed Sheeran.</p>
+            <p>Para más información, visita el <a href="https://taylorswift.fandom.com/es/wiki/The_Red_Tour">artículo en Swiftipedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/The1989WorldTour.jpg" alt="The 1989 World Tour" width="320">
+            <p>The 1989 World Tour fué la cuarta gira de conciertos de Taylor Swift, asociado a su quinto álbum de estudio, 1989 (2014). Las fechas europeas y norteamericanas de la gira, así como dos espectáculos en Japón, se anunciaron en noviembre de 2014, seguidas de las fechas de Oceanía en diciembre de 2014.</p>
+            <p> Se anunciaron fechas adicionales para Singapur y Shanghai en junio de 2015 con un tercer y último espectáculo en Melbourne anunciado en julio de 2015.</p>
+            <p>Para más información, visita el <a href="https://taylorswift.fandom.com/es/wiki/The_1989_World_Tour">artículo en Swiftipedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/ReputationStadiumTour.jpg" alt="Reputation Stadium Tour" width="320">
+            <p>El Reputation Stadium Tour fue la quinta gira de concierton de Taylor Swift, asociado a su sexto álbum de estudio Reputation (2017). La gira, que recorrió únicamente estadios, comenzó el 8 de mayo de 2018 en Tokyo, y constó de 53 shows. Recibió 2,55 millones de asistidos y recaudó 345,7 millones de dólares en ingresos. Marcó la gira más exitosa de Swift hasta la fecha y rompió muchos récords, como convertirse en la tercera gira de conciertos de una mujer con mayor recaudación de todos los tiempos.</p>
+            <p> Recibió elogios universales de los críticos, quienes comúnmente la etiquetaron como la mejor gira de 2018 y la mejor gira de Swift hasta la fecha. Además, ganó varios premios como "Gira del Año". </p>
+            <p>Para más información, visita el <a href="https://taylorswift.fandom.com/es/wiki/Reputation_Stadium_Tour">artículo en Swiftipedia</a>.</p>
+        </div>
+    </div>
+	<div class="container">
+        <div class="tour-info">
+            <img src="Img/TheErasTour.jpg" alt="The Eras Tour" width="320">
+            <p>The Eras Tour es la sexta gira de Taylor Swift. Al no haber realizado una gira para sus álbumes de estudio de 2019-2020 Lover, Folklore y Evermore debido a las consecuencias de la pandemia de COVID-19, Swift se embarca en el Eras Tour en apoyo de todos sus álbumes, incluido su último disco, Midnights (2022).</p>
+            <p> Es una gira de estadios que comenzó el 18 de marzo de 2023 en Glendale, Arizona y finalizará el 8 de Diciembre de 2024, en Vancouver, Canada. Swift describió el concepto de la gira como un "viaje a través de todas sus épocas musicales".</p>
+            <p>Para más información, visita el <a href="https://taylorswift.fandom.com/es/wiki/The_Eras_Tour">artículo en Swiftipedia</a>.</p>
+        </div>
+    </div>
+	
+<nav>
+    <div class="nav-wrapper" style="display: flex; justify-content: space-between;">
+        <a href="Menu.HTML">Menu</a>
+        <div class="nav-wrapper-center" style="display: flex; justify-content: center;">
+            <a href="ToursLadyGaga.HTML">Tours de Lady Gaga</a>
+            <a href="ToursDuaLipa.HTML">Tours de Dua Lipa</a>
+        </div>
+        <div class="nav-wrapper-right" style="display: flex; justify-content: right;">
+            <a href="Formulario.HTML">Formulario</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+	
+</body>
+</html>

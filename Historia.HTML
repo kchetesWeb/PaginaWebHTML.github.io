@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+<title>Historia de Artistas Pop</title>
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-family: "Lucida Handwriting", sans-serif;
+    }
+    nav {
+        background-color: #6495ED;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    nav a:hover {
+        background-color: #666;
+        color: white;
+    }
+    section {
+        padding: 20px;
+        text-align: left;
+        margin: 0 auto; /* Centrar horizontalmente */
+        max-width: 800px; /* Ancho máximo para el contenido */
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    section h2 {
+        font-family: "Lucida Handwriting", cursive;
+        margin-bottom: 10px;
+    }
+    section p {
+        font-family: "Helvetica", sans-serif;
+        line-height: 1.6;
+    }
+    .artist-image {
+        max-width: 400px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        display: block;
+    }
+	p {
+        font-family: 'Helvetica', sans-serif;
+        color: #000000;
+    }
+	#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Historia de la Música de mis Artistas</h1>
+	<div id="mapa-sitio">
+        <a href="index.HTML">Inicio</a>
+        <a href="Menu.HTML">Artistas</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Albumes.html">Álbumes</a>
+        <a href="Premios.html">Premios</a>
+        <a href="Canciones.html">Canciones</a>
+        <a href="Tours.html">Tours</a>
+        <a href="Formulario.html">Formulario</a>
+    </div>
+    <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+</header>
+
+<section>
+    <h2>Lady Gaga</h2>
+    <p>Lady Gaga es una cantante, compositora y actriz estadounidense. Su estilo musical abarca varios géneros, como el pop, dance, y electrónica. Se hizo conocida por sus extravagantes y provocativos espectáculos en vivo, así como por su versatilidad vocal. Entre sus éxitos más conocidos se encuentran "Poker Face", "Bad Romance" y "Born This Way".</p>
+    <img class="artist-image" src="Img/LadyGaga5.jpeg" alt="Lady Gaga">
+    <audio controls>
+        <source src="Audio/JustDance.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<section>
+    <h2>Taylor Swift</h2>
+    <p>Taylor Swift es una cantante y compositora estadounidense que ha incursionado en diversos géneros musicales, incluyendo el country y el pop. A lo largo de su carrera, ha ganado numerosos premios, incluidos varios Grammy. Algunos de sus éxitos más populares son "Love Story", "Shake It Off" y "Blank Space".</p>
+    <img class="artist-image" src="Img/TaylorSwift2.jpeg" alt="Taylor Swift">
+    <audio controls>
+        <source src="Audio/Bejeweled.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<section>
+    <h2>Dua Lipa</h2>
+    <p>Dua Lipa es una cantante y compositora británica de origen albanés. Su música se ha caracterizado por combinar diferentes estilos, como el pop, el dance y el R&B. Algunos de sus éxitos más conocidos incluyen "New Rules", "Don't Start Now" y "Levitating". Ha ganado varios premios, incluidos Grammys.</p>
+    <img class="artist-image" src="Img/DuaLipa5.jpeg" alt="Dua Lipa">
+    <audio controls>
+        <source src="Audio/BlowYourMind.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+<nav>
+    <div class="nav-wrapper" style="display: flex; justify-content: space-between;">
+        <a href="Menu.HTML">Menu</a>
+        <div class="nav-wrapper-center" style="display: flex; justify-content: center;">
+            <a href="Biografia.HTML">Biografia</a>
+        </div>
+        <div class="nav-wrapper-right" style="display: flex; justify-content: right;">
+            <a href="Albumes.HTML">Álbumes</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+
+</body>
+</html>

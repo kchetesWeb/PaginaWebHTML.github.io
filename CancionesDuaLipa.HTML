@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpg" href="Img/Microfono.jpg">
+<title>Canciones de Dua Lipa</title>
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-family: "Lucida Handwriting", sans-serif;
+    }
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center; /* Alinea todo el contenido de la tabla al centro */
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid black; /* Borde inferior negro y delgado */
+    border-right: 1px solid black; /* Borde derecho negro y delgado */
+}
+
+th {
+    background-color: #6495ED;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-right: 2px solid black; /* Borde derecho negro y grueso */
+    border-top: 2px solid black; /* Borde superior negro y grueso */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #6495ED;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: color 0.3s; /* Transición de color al pasar el mouse */
+}
+
+nav a:hover {
+    color: #E9967A; /* Cambiar el color al pasar el mouse */
+}
+#mapa-sitio {
+        display: none;
+        background-color: #f5f5f5; /* Cambiar color de fondo del mapa del sitio */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #mapa-sitio a {
+        color: black; /* Cambiar color de los enlaces dentro del mapa del sitio */
+        font-family: "Britannic Bold", sans-serif; /* Cambiar tipo de letra de los enlaces dentro del mapa del sitio */
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+    }
+    #mapa-sitio a.clicked {
+        background-color: #007bff; /* Color de fondo cuando se hace clic */
+        color: #ffffff; /* Color del texto cuando se hace clic */
+    }
+    .ver-mapa-btn {
+        background-color: #6495ED;
+        color: #f5f5f5;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: "Britannic Bold", sans-serif;
+    }
+    .ver-mapa-btn:hover {
+        background-color: #666;
+        color: white;
+    }
+	#mapa-sitio a:visited {
+    color: #007bff; /* Cambiar color de los enlaces visitados en el mapa del sitio */
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Canciones de Dua Lipa</h1>
+	<div id="mapa-sitio">
+            <a href="index.HTML">Inicio</a>
+            <a href="Menu.HTML">Artistas</a>
+            <a href="Historia.html">Historia</a>
+            <a href="Albumes.html">Álbumes</a>
+            <a href="Premios.html">Premios</a>
+            <a href="Canciones.html">Canciones</a>
+            <a href="Tours.html">Tours</a>
+            <a href="Formulario.html">Formulario</a>
+        </div>
+        <button class="ver-mapa-btn" onclick="toggleMapa()">Ver Mapa del Sitio</button>
+</header>
+
+<table>
+    <thead>
+        <tr>
+            <th>Video</th>
+            <th>Nombre de la Canción</th>
+            <th>Enlace del Video</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><video width="320" height="240" controls><source src="Video/PhysicalVideo.mp4" type="video/mp4"></video></td>
+            <td>Physical</td>
+            <td><a href="https://youtu.be/9HDEHj2yzew?si=pqoeCBUK9FWY5EDD">Ver Video en Youtube</a></td>
+        </tr>
+        <tr>
+            <td><video width="320" height="240" controls><source src="Video/NewRulesVideo.mp4" type="video/mp4"></video></td>
+            <td>New Rules</td>
+            <td><a href="https://youtu.be/k2qgadSvNyU?si=0126lPe7kr4lv9og">Ver Video en Youtube</a></td>
+        </tr>
+        <tr>
+            <td><video width="320" height="240" controls><source src="Video/HoudiniVideo.mp4" type="video/mp4"></video></td>
+            <td>Houdini</td>
+            <td><a href="https://youtu.be/suAR1PYFNYA?si=p_RwLd7FoM9kzCic">Ver Video en Youtube</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<nav>
+    <a href="Menu.HTML" style="margin-right: auto;">Menu</a>
+    <a href="CancionesLadyGaga.HTML">Canciones de Lady Gaga</a>
+    <a href="CancionesTaylorSwift.HTML">Canciones de Taylor Swift</a>
+    <a href="Tours.html" style="margin-left: auto;">Tours</a>
+</nav>
+
+<script>
+function toggleMapa() { <!-- Define una función llamada toggleMapa que se encarga de mostrar u ocultar el mapa del sitio -->
+    var mapa = document.getElementById("mapa-sitio"); <!-- Obtiene el elemento con el ID "mapa-sitio" y lo guarda en la variable mapa -->
+    if (mapa.style.display === "none" || mapa.style.display === "") { <!-- Verifica si el estilo CSS display del elemento mapa es "none" o está vacío. Si es así, significa que el mapa está oculto y se cambia su estilo a "block" para mostrarlo -->
+        mapa.style.display = "block"; <!-- Cambia el estilo CSS display del elemento mapa a "block" para mostrarlo -->
+    } else { <!-- Si el mapa no está oculto (es decir, está visible), se ejecuta este bloque de código -->
+        mapa.style.display = "none"; <!-- Cambia el estilo CSS display del elemento mapa a "none" para ocultarlo -->
+        var enlaces = document.querySelectorAll("#mapa-sitio a"); <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y los guarda en la variable enlaces -->
+        enlaces.forEach(function(enlace) { <!-- Itera sobre cada elemento <a> en la lista enlaces -->
+            enlace.classList.remove("clicked"); <!-- Remueve la clase "clicked" de cada elemento <a>. Esta clase se usa para resaltar el enlace clicado -->
+        }); <!-- Cierra el bucle forEach que itera sobre los enlaces -->
+    }
+}
+
+document.querySelectorAll("#mapa-sitio a").forEach(function(enlace) { <!-- Obtiene todos los elementos <a> dentro del elemento con ID "mapa-sitio" y para cada uno de ellos ejecuta la función proporcionada -->
+    enlace.addEventListener("click", function() { <!-- Añade un evento "click" a cada enlace para ejecutar la función proporcionada cuando se haga clic en él -->
+        enlace.classList.add("clicked"); <!-- Añade la clase "clicked" al enlace clicado para resaltarlo -->
+    }); <!-- Cierra la función addEventListener que añade el evento "click" a los enlaces -->
+});
+</script>
+
+</body>
+</html>
